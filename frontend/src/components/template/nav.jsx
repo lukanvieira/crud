@@ -1,5 +1,6 @@
 import React from "react";
 import './nav.css'
+import Item from './NavItems'
 
 const nav = props => 
     <aside className="menu-area">
