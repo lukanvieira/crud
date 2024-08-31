@@ -1,14 +1,19 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Arthur Oliveira",
-            "email": "aoliveira@cod3r.com.br"
-        },
-        {
-            "id": 2,
-            "name": "Maria Julia da Silva",
-            "email": "mjds@empresa.com"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "name": "Arthur Oliveira",
+      "email": "aoliveira@cod3r.com.br"
+    },
+    {
+      "id": "2",
+      "name": "Maria Julia da Silva",
+      "email": "mjds@empresa.com"
+    },
+    {
+      "id": "34d4",
+      "name": "Luke Skywalker",
+      "email": "luka-vieiralk@hotmail.com"
+    }
+  ]
 }

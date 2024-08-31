@@ -13,12 +13,11 @@ const initialState = {
     user: { name: '', email: '' },
     list: []
 }
-
 class UserCrud extends Component {
 
     state = { ...initialState }
 
-    componentWillMount() {              // componentWillMount não é mais usado!
+    componentDidMount() {              // componentWillMount não é mais usado!
         axios(baseUrl).then(resp => {   // resp.data contém a lista.
             this.setState({ list: resp.data })
         })
@@ -135,10 +134,10 @@ class UserCrud extends Component {
                             onClick={() => this.load(user)}>
                             <i className="fa fa-pencil"></i>
                         </button>
-                         <button className="btn btn-danger ms-2"
+                        <button className="btn btn-danger ms-2"
                             onClick={() => this.remove(user)}>
                             <i className="fa fa-trash"></i>
-                         </button>
+                        </button>
                     </td>
                 </tr>
             )
@@ -147,6 +146,7 @@ class UserCrud extends Component {
 
     render() {
         // console.log(this.state.list)
+        // console.log({ ...this.state.list })
         return (
             <Main {...headerProps}>
                 {this.renderForm()}
